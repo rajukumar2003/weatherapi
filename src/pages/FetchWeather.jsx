@@ -15,7 +15,7 @@ const FetchWeather = () => {
             const getWeather = async () => {
 
                 try {
-                    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=ec90496755304a7abf6101557242006&q=${input}&aqi=no`);
+                    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=ec90496755304a7abf6101557242006&q=${input}&aqi=no`);
                     const data = await response.json();
                     if (!response.ok) {
                         throw new Error('Enter a valid city name');
